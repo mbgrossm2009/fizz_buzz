@@ -1,12 +1,14 @@
-1.upto(100) do |i|
+numbers = (1..100).to_a
 
-if i % 5 == 0
-  puts "buzz"
-
-elsif i % 3 == 0
-  puts "Fizz"
-
-else
-  puts i
-end
+numbers.each do |num|
+  if num % 3 == 0
+    puts "fizz"
+  elsif num % 5 == 0
+    puts "Buzz"
+  elsif num % 3==0 && num % 5 == 0
+    puts "FizzBuzz"
+  else
+    puts num
   end
+
+end
